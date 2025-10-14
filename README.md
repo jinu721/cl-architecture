@@ -48,6 +48,7 @@ It provides:
 
 ## Folder Structure
 
+```
 src/
 ┣━━ pulse/
 ┣━━ orbit/
@@ -64,6 +65,7 @@ src/
 ┣━━ framework/
 ┗━━ test/
 
+```
 
 ---
 

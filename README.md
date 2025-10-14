@@ -1,4 +1,4 @@
-# CL-Architecture ⚡
+# CL-Architecture 
 **Version:** 1.0.0  
 **Tagline:** “The modern, modular, and automated backend architecture pattern built for clarity, control, and scalability.”
 

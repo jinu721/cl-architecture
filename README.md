@@ -1,97 +1,152 @@
-# CL-Architecture 
-**Version:** 1.0.0  
-**Tagline:** “The modern, modular, and automated backend architecture pattern built for clarity, control, and scalability.”
+# CL-Architecture (Core-Line Architecture)
+
+A strict, production-ready backend architecture for clarity, control, and scale.
 
 ---
 
-## Overview
+## What is CL-Architecture?
 
-**CL-Architecture** (Core-Line Architecture) is a next-generation backend pattern for Node.js / TypeScript backends.  
-It provides:
+**CL-Architecture (Core-Line Architecture)** is a backend architecture **standard**, not a framework.
 
-- Modular, self-contained feature structure  
-- Enforced design principles: SOLID, DRY, CQRS, Dependency Inversion  
-- Built-in core utilities: logging, error handling, mapping, monitoring  
-- Automated CLI generation for modules and boilerplate  
-- Testable, scalable, and enterprise-ready design
+It defines clear rules for how backend code should be structured, written, and connected so teams can build scalable systems without chaos.
 
----
-
-## Core Philosophy
-
-| Principle | Description |
-|------------|-------------|
-| **Linear Flow** | Data and logic move clearly along the “Core Line”. |
-| **Isolation by Context** | Each module owns its data, logic, and validation. |
-| **Automation by Convention** | File structure, naming, and wiring are standardized. |
-| **Abstraction by Contract** | Layers interact only through typed interfaces. |
-| **Observability First** | Logging, tracing, and metrics are core. |
-| **Testable by Design** | Every layer is unit-testable. |
-| **Future-Ready** | Built for AI agents, event buses, distributed systems. |
+It works with:
+- **TypeScript / Node.js (MERN backends)**
+- **Go (REST APIs, services, microservices)**
 
 ---
 
-## Layers
+## Why CL-Architecture?
 
-| Layer | Role |
-|-------|------|
-| **Port** | Entry layer (HTTP, GraphQL, CLI, WebSocket). |
-| **Flow** | Business logic and workflows. |
-| **Source** | Data access: DB, cache, external APIs. |
-| **Shape** | Domain models, entities, schemas. |
-| **Bridge** | DTOs / transformation layer. |
-| **Pulse** | Core systems: logging, error, events, telemetry. |
-| **Orbit** | Config, environment, constants. |
-| **Gateway** | Application entry point, dependency registration. |
+Most backend projects become hard to maintain because of:
+
+- Fat controllers
+- Business logic mixed with database logic
+- Validation scattered across layers
+- Inconsistent DTOs and responses
+- Weak production logging
+- Poor dependency injection
+- No shared rules across teams
+
+CL-Architecture solves these problems by enforcing structure, discipline, and automation.
 
 ---
 
-## Folder Structure
+## Core Idea: The Core Line
 
-```
-src/
-┣━━ pulse/
-┣━━ orbit/
-┣━━ gateway/
-┣━━ modules/
-│ ┣━━ user/
-│ │ ┣━━ port/
-│ │ ┣━━ flow/
-│ │ ┣━━ source/
-│ │ ┣━━ shape/
-│ │ ┣━━ bridge/
-│ │ ┗━━ rule/
-│ ┗━━ auth/
-┣━━ framework/
-┗━━ test/
+Every request follows one clear, linear path:
 
 ```
 
----
+Route → Controller (Port) → Flow → Source → Flow → Response
 
-## Naming Conventions
+````
 
-| Type | Convention | Example |
-|------|------------|---------|
-| Class / Interface | PascalCase | `UserFlow`, `IUserSource` |
-| File | kebab-case | `user-flow.ts` |
-| DTO / Model | PascalCase + suffix | `UserShape`, `CreateUserBridge` |
-| Command / Query | Verb + Noun | `CreateUserFlow`, `GetUserFlow` |
-| Constants | UPPER_SNAKE_CASE | `MAX_LOGIN_ATTEMPTS` |
-| Env variables | Uppercase prefix | `APP_PORT`, `DB_URL` |
+No shortcuts.  
+No cross-layer calls.  
+No hidden logic.
 
 ---
 
-## Automation CLI (Example)
+## What CL-Architecture Gives You
+
+- Modular, self-contained features
+- Clear separation of concerns
+- Thin and clean controllers
+- Input and output DTO rules
+- Centralized validation
+- Production-ready logging
+- Proper dependency injection
+- CLI-driven consistency
+
+---
+
+## Is This a Framework?
+
+No.
+
+CL-Architecture:
+- Does not replace Express, Fastify, or Gin
+- Does not use decorators or magic
+- Does not lock you into a runtime
+
+It is a discipline-first backend architecture standard.
+
+---
+
+## Getting Started
+
+### Initialize a new project
 
 ```bash
-npx cl-cli create module user
-Generates module structure automatically:
+npx cl-architecture init
+````
 
-/modules/user with all subfolders
+### Create a module
 
-Base files (port, flow, source, bridge, shape, rule)
+```bash
+npx cl-architecture create module user
+```
 
-Registers module in gateway
+---
 
-Adds stub tests
+## How People Use It
+
+### Option 1: npx (no install)
+
+```bash
+npx cl-architecture init
+npx cl-architecture create module auth
+```
+
+### Option 2: Global install
+
+```bash
+npm install -g cl-architecture
+cl init
+cl create module user
+```
+
+### Option 3: Project dependency
+
+```bash
+npm install -D cl-architecture
+npx cl create module payment
+```
+
+---
+
+## Documentation
+
+* `docs/INTRODUCTION.md` — Architecture concepts
+* `docs/RULES.md` — Architecture rules
+* `docs/CLI.md` — CLI commands
+* `docs/INSTALLATION.md` — Setup guide
+* `docs/EXAMPLES.md` — TypeScript and Go examples
+
+---
+
+## When to Use CL-Architecture
+
+Best for:
+
+* Medium to large backend projects
+* Long-term systems
+* Team-based development
+* Production environments
+
+Not recommended for:
+
+* Small scripts
+* Quick prototypes
+* One-file APIs
+
+---
+
+## Final Note
+
+CL-Architecture works only if the rules are followed.
+
+Break the rules → architecture breaks
+Follow the rules → system scales
+

@@ -10,7 +10,7 @@ A strict, production-ready backend architecture for clarity, control, and scale.
 
 It defines clear rules for how backend code should be structured, written, and connected so teams can build scalable systems without chaos.
 
-It works with:
+It works with:-
 - **TypeScript / Node.js (MERN backends)**
 - **Go (REST APIs, services, microservices)**
 

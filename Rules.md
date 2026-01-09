@@ -1,4 +1,4 @@
-# CL-Architecture — Rules & Guarantees
+# CL-Architecture — Rules & Guarantees 
 
 This document defines the **non-negotiable rules** of CL-Architecture.
 

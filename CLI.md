@@ -1,4 +1,4 @@
-# CL-Architecture — CLI Guide
+# CL-Architecture — CLI Guide 
 
 The CL-Architecture CLI is a **core part of the system**.
 

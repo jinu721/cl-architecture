@@ -119,8 +119,10 @@ npx cl create module payment
 * `docs/INTRODUCTION.md` — Architecture concepts
 * `docs/RULES.md` — Architecture rules
 * `docs/CLI.md` — CLI commands
+* `docs/ECOSYSTEM.md` — Language & Framework adaptation
 * `docs/INSTALLATION.md` — Setup guide
 * `docs/EXAMPLES.md` — TypeScript and Go examples
+* `docs/COMPARISON.md` — Comparison with other architectures
 
 ---
 

@@ -297,5 +297,10 @@ CL-Architecture enforces discipline via automated Git Hooks set up during initia
 *   **Commit-msg**: Validates the commit message against Conventional Commit standards.
 *   **Pre-push (Optional)**: Ensures that branch naming follows the `feature/`, `bugfix/`, or `hotfix/` prefix convention.
 
-Strict separation between feature additions, bug fixes, and documentation ensures the project history remains highly readable and professionally maintained.
+### Branching Strategy:
+CL-Architecture requires a strict hierarchical branching model:
+*   **`main` branch**: The Sacred Production Space. Only stable, tested code from `dev` is merged here. No direct commits allowed.
+*   **`dev` branch**: The Integration Space. All feature and bugfix branches merge here for testing and staging. This is the heart of the project development.
+*   **`feature/`**, **`bugfix/`**, **`hotfix/`**: Short-lived branches created for specific tasks. They must always originate from and return to `dev` (or `main` in the case of critical hotfixes).
 
+Strict separation between feature additions, bug fixes, and documentation ensures the project history remains highly readable and professionally maintained.

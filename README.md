@@ -69,6 +69,7 @@ CL-Architecture is **Language-Agnostic** and works seamlessly with:
 
 *   [INTRODUCTION.md](docs/INTRODUCTION.md) — The Core Concepts
 *   [RULES.md](docs/RULES.md) — The Non-Negotiable Laws
+*   [STANDARDS.md](docs/STANDARDS.md) — Internalized Industry Principles
 *   [CLI.md](docs/CLI.md) — The Automation Guide
 *   [ECOSYSTEM.md](docs/ECOSYSTEM.md) — Language & Framework Adaptation
 *   [COMPARISON.md](docs/COMPARISON.md) — CL vs. Clean Architecture & Repo Pattern

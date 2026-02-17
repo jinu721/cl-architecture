@@ -1,152 +1,85 @@
 # CL-Architecture (Core-Line Architecture)
 
-A strict, production-ready backend architecture for clarity, control, and scale.
+**The Universal Standard for High-Performance Backend Engineering.**
+
+CL-Architecture is not just a folder structure—it is a **Discipline-First Backend Standard** designed to eliminate technical debt, enforce linear execution, and guarantee scale. It transforms your development process from "freestyle coding" into a professional, industrial-grade engineering protocol.
 
 ---
 
-## What is CL-Architecture?
+## The Core-Line Philosophy
 
-**CL-Architecture (Core-Line Architecture)** is a backend architecture **standard**, not a framework.
+Most backend systems decay because logic leaks across layers. CL-Architecture stops this by enforcing the **Core-Line**: a single, non-negotiable path that every request must follow.
 
-It defines clear rules for how backend code should be structured, written, and connected so teams can build scalable systems without chaos.
+```
+Route → Port (Controller) → Flow (Service) → Source (Repository) → Flow → Response
+```
 
-It works with:-
-- **TypeScript / Node.js (MERN backends)**
-- **Go (REST APIs, services, microservices)**
+No shortcuts. No cross-layer calls. No hidden complexity.
 
 ---
 
 ## Why CL-Architecture?
 
-Most backend projects become hard to maintain because of:
+### 1. Total Execution Discipline
+The "Core-Line" rule ensures that you always know exactly where code belongs. 
+*   **Port**: I/O Handling only.
+*   **Flow**: Pure Business Logic only.
+*   **Source**: Data Persistence only.
+*   **Link**: External SDK Isolation only (Vendor Neutrality).
 
-- Fat controllers
-- Business logic mixed with database logic
-- Validation scattered across layers
-- Inconsistent DTOs and responses
-- Weak production logging
-- Poor dependency injection
-- No shared rules across teams
+### 2. Zero-Trust Engineering
+CL-Architecture protects the codebase from the developer.
+*   **Automated Git Hooks**: The CLI installs pre-commit and commit-msg hooks to enforce linting and Conventional Commits.
+*   **Rule Enforcement**: Architecture rules are checked automatically. If the code breaks the "Core-Line," it cannot be committed.
 
-CL-Architecture solves these problems by enforcing structure, discipline, and automation.
+### 3. Vendor Neutrality (Isolation)
+Never be trapped by a library again. Every third-party SDK (JWT, Stripe, Mailers) is isolated in the **Link** layer. Changing a vendor requires zero changes to your business logic.
 
----
-
-## Core Idea: The Core Line
-
-Every request follows one clear, linear path:
-
-```
-Route → Port (Controller) → Flow (Service) → Source (Repository) → Flow → Response
-````
-
-No shortcuts.  
-No cross-layer calls.  
-No hidden logic.
+### 4. Professional Git Strategy
+Every CL project follows **Rule 13 (Atomic Commits)** and a strict **Main/Dev Branching** model. Your repository history becomes a searchable, professional chronological log of your engineering decisions.
 
 ---
 
-## What CL-Architecture Gives You
+## Quick Start
 
-- Modular, self-contained features
-- Clear separation of concerns
-- Thin and clean controllers
-- Input and output DTO rules
-- Centralized validation
-- Production-ready logging
-- Proper dependency injection
-- CLI-driven consistency
-
----
-
-## Is This a Framework?
-
-No.
-
-CL-Architecture:
-- Does not replace Express, Fastify, or Gin
-- Does not use decorators or magic
-- Does not lock you into a runtime
-
-It is a discipline-first backend architecture standard.
-
----
-
-## Getting Started
-
-### Initialize a new project
-
+### 1. Initialize Modern Architecture
 ```bash
-npx cl-architecture init
-````
+npx cl-architecture init --naming=custom
+```
+*Choose between **Core-Line Custom** (Port/Flow/Source/Link) or **Industry Standard** (Controller/Service/Repository/Provider).*
 
-### Create a module
-
+### 2. Generate a Module
 ```bash
 npx cl-architecture create module user
 ```
 
 ---
 
-## How People Use It
+## Global Compatibility
 
-### Option 1: npx (no install)
-
-```bash
-npx cl-architecture init
-npx cl-architecture create module auth
-```
-
-### Option 2: Global install
-
-```bash
-npm install -g cl-architecture
-cl init
-cl create module user
-```
-
-### Option 3: Project dependency
-
-```bash
-npm install -D cl-architecture
-npx cl create module payment
-```
+CL-Architecture is **Language-Agnostic** and works seamlessly with:
+*   **Node.js / TypeScript** (Express, Fastify, NestJS)
+*   **Go** (Standard Lib, Gin, Fiber)
+*   **Python** (FastAPI, Django)
+*   **Java / C#** (Spring Boot, .NET Core)
 
 ---
 
-## Documentation
+## Deep Dive Documentation
 
-* `docs/INTRODUCTION.md` — Architecture concepts
-* `docs/RULES.md` — Architecture rules
-* `docs/CLI.md` — CLI commands
-* `docs/ECOSYSTEM.md` — Language & Framework adaptation
-* `docs/INSTALLATION.md` — Setup guide
-* `docs/EXAMPLES.md` — TypeScript and Go examples
-* `docs/COMPARISON.md` — Comparison with other architectures
-
----
-
-## When to Use CL-Architecture
-
-Best for:
-
-* Medium to large backend projects
-* Long-term systems
-* Team-based development
-* Production environments
-
-Not recommended for:
-
-* Small scripts
-* Quick prototypes
-* One-file APIs
+*   [INTRODUCTION.md](docs/INTRODUCTION.md) — The Core Concepts
+*   [RULES.md](docs/RULES.md) — The Non-Negotiable Laws
+*   [CLI.md](docs/CLI.md) — The Automation Guide
+*   [ECOSYSTEM.md](docs/ECOSYSTEM.md) — Language & Framework Adaptation
+*   [COMPARISON.md](docs/COMPARISON.md) — CL vs. Clean Architecture & Repo Pattern
+*   [EXAMPLES.md](docs/EXAMPLES.md) — Real-world code samples
 
 ---
 
-## Final Note
+## The Final Note
 
-CL-Architecture works only if the rules are followed.
+CL-Architecture is a discipline. 
+**Follow the rules → The system scales.**
+**Break the rules → The architecture fails.**
 
-Break the rules → architecture breaks
-Follow the rules → system scales
-
+Built for engineers who value precision over speed, and quality over shortcuts.

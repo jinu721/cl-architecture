@@ -64,6 +64,25 @@ This linear flow is called the **Core Line**.
 
 ---
 
+## Naming Styles: Custom vs. Industry Standard
+
+CL-Architecture is about **discipline, not just vocabulary**.
+
+While the architecture was born with unique naming conventions to emphasize its core principles, it also supports industry-standard naming for easier adoption.
+
+| Layer | **Core-Line Custom** | **Industry Standard** | Role |
+| :--- | :--- | :--- | :--- |
+| **Port** | `port` | `controller` | I/O handling, request reading. |
+| **Flow** | `flow` | `service` / `usecase` | Business logic, application rules. |
+| **Source** | `source` | `repository` | Data access, external integrations. |
+| **Bridge** | `bridge` | `dto` / `mapper` | Data transformation and mapping. |
+| **Rule** | `rule` | `validation` | Schema and input validation. |
+| **Shape** | `shape` | `model` / `entity` | Domain entities and data structures. |
+
+Regardless of the names you choose, the **Rules stay the same**. You can select your preferred naming style during project initialization.
+
+---
+
 ## Why Linear Flow Matters
 
 Linear flow gives you:

@@ -168,16 +168,16 @@ All files follow CL naming rules.
 ## CLI Output Example
 
 ```
-✔ Project initialized
-✔ Module "user" created
-✔ Controller generated
-✔ Flow generated
-✔ Source created
-✔ DTOs added
-✔ Validation added
-✔ Routes registered
-✔ DI wired
-✔ Tests scaffolded
+Project initialized
+Module "user" created
+Controller generated
+Flow generated
+Source created
+DTOs added
+Validation added
+Routes registered
+DI wired
+Tests scaffolded
 ```
 
 ---

@@ -43,10 +43,10 @@ Each layer has **one job only**.
 - Call Flow
 - Return standardized response
 
-❌ No business logic  
-❌ No DB logic  
-❌ No try/catch  
-❌ No response formatting  
+No business logic  
+No DB logic  
+No try/catch  
+No response formatting  
 
 ---
 
@@ -55,9 +55,9 @@ Each layer has **one job only**.
 - Coordinates operations
 - Uses interfaces only
 
-❌ No HTTP logic  
-❌ No DB queries  
-❌ No framework code  
+No HTTP logic  
+No DB queries  
+No framework code  
 
 ---
 
@@ -66,8 +66,8 @@ Each layer has **one job only**.
 - External API calls
 - Cache access
 
-❌ No business decisions  
-❌ No request handling  
+No business decisions  
+No request handling  
 
 ---
 
@@ -76,8 +76,8 @@ Each layer has **one job only**.
 - Entities
 - Core data structures
 
-❌ No logic  
-❌ No framework imports  
+No logic  
+No framework imports  
 
 ---
 
@@ -86,7 +86,7 @@ Each layer has **one job only**.
 - Output DTOs
 - Data transformation
 
-❌ No business logic  
+No business logic  
 
 ---
 
@@ -94,7 +94,7 @@ Each layer has **one job only**.
 - Request validation
 - Input schemas
 
-❌ No business rules  
+No business rules  
 
 ---
 

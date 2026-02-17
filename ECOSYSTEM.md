@@ -6,7 +6,7 @@ Here is how CL-Architecture fits into your favorite stacks:
 
 ---
 
-## 🟢 Node.js / TypeScript
+## Node.js / TypeScript
 
 ### Express & Fastify
 *   **Adaptation**: Minimalist frameworks work best with CL. **Ports** are your route handlers, and **Pulse** handles the global error middleware.
@@ -18,14 +18,14 @@ Here is how CL-Architecture fits into your favorite stacks:
 
 ---
 
-## 🔵 Go (Golang)
+## Go (Golang)
 
 *   **Adaptation**: Go's native interfaces are the backbone of the **Source** layer. Standard library `http.HandlerFunc` acts as the **Port**.
 *   **The Win**: Go fits CL like a glove. It emphasizes explicit logic and clean boundaries, making it the "Gold Standard" implementation of the Core-Line.
 
 ---
 
-## 🟡 Python
+## Python
 
 ### FastAPI
 *   **Adaptation**: Use Pydantic models in the **Rule** (Validation) and **Bridge** (DTO) layers. The **Flow** remains a pure Python class with no framework dependencies.
@@ -37,7 +37,7 @@ Here is how CL-Architecture fits into your favorite stacks:
 
 ---
 
-## 🏛️ Java & C#
+## Java & C#
 
 ### Spring Boot / .NET Core
 *   **Adaptation**: Directly maps to the Controller-Service-Repository pattern. 
@@ -45,7 +45,7 @@ Here is how CL-Architecture fits into your favorite stacks:
 
 ---
 
-## ☁️ Serverless (AWS Lambda / Cloud Functions)
+## Serverless (AWS Lambda / Cloud Functions)
 
 *   **Adaptation**: The Lambda entry point is the **Port**. 
 *   **The Win**: Allows you to run the same **Flow** (Business Logic) in a Lambda, a CLI tool, or a massive Monolith. You only change the **Port**.

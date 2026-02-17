@@ -169,4 +169,4 @@ It is about:
 - Enforcing rules consistently
 
 If the rules are followed, the system stays clean.
-If the rules are broken, the architecture fails.T
+If the rules are broken, the architecture fails.

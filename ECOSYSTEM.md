@@ -54,7 +54,8 @@ Here is how CL-Architecture fits into your favorite stacks:
 
 ## Why CL works everywhere:
 1.  **Dependency Inversion**: Every layer talks to the next one via interfaces/types.
-2.  **Boundary Protection**: Your business logic (**Flow**) is never "married" to your framework.
-3.  **Universal Logic**: Logic is just logic—whether it's JS, Go, or Python.
+2.  **Vendor Neutrality**: External SDKs are isolated in the **Link** (Provider) layer, protecting the core from library changes.
+3.  **Boundary Protection**: Your business logic (**Flow**) is never "married" to your framework.
+4.  **Universal Logic**: Logic is just logic—whether it's JS, Go, or Python.
 
 **CL-Architecture is the Universal Operating System for clean backends.**

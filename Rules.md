@@ -297,7 +297,28 @@ CL-Architecture enforces discipline via automated Git Hooks set up during initia
 *   **Commit-msg**: Validates the commit message against Conventional Commit standards.
 *   **Pre-push (Optional)**: Ensures that branch naming follows the `feature/`, `bugfix/`, or `hotfix/` prefix convention.
 
-### Branching Strategy:
+### Link (Provider)
+- External library wrappers
+- Third-party SDK integrations (JWT, Stripe, Mail)
+- Vendor-specific logic
+
+No business decisions  
+No database queries
+
+---
+
+## 14. Vendor Isolation (Link Rule)
+
+Any external package or third-party SDK must be abstracted behind an interface. 
+
+### Rules:
+* **The Layer**: All vendor-specific implementations must live in the **Link** (or **Provider**) layer.
+* **Flow Isolation**: The **Flow** layer is strictly forbidden from importing external infrastructure libraries directly. It must only interact with interfaces.
+* **Zero-Touch Switching**: Changing a library (e.g., swapping `jsonwebtoken` for `jose`) should only require modifications in the **Link** layer, leaving the **Flow** untouched.
+
+---
+
+## 15. Branching Strategy:
 CL-Architecture requires a strict hierarchical branching model:
 *   **`main` branch**: The Sacred Production Space. Only stable, tested code from `dev` is merged here. No direct commits allowed.
 *   **`dev` branch**: The Integration Space. All feature and bugfix branches merge here for testing and staging. This is the heart of the project development.

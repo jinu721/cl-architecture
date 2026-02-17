@@ -101,6 +101,7 @@ modules/user/
  ┣━━ source/  (Data Access)
  ┣━━ shape/   (Models/Entities)
  ┣━━ bridge/  (DTOs & Mappers)
+ ┣━━ link/    (External Providers)
  ┗━━ rule/    (Validation)
 ```
 
@@ -112,6 +113,7 @@ modules/user/
  ┣━━ repository/ (Data Access)
  ┣━━ model/      (Models/Entities)
  ┣━━ dto/        (DTOs & Mappers)
+ ┣━━ provider/   (External Providers)
  ┗━━ validation/ (Validation)
 ```
 

@@ -77,6 +77,7 @@ While the architecture was born with unique naming conventions to emphasize its 
 | **Source** | `source` | `repository` | Data access, external integrations. |
 | **Bridge** | `bridge` | `dto` / `mapper` | Data transformation and mapping. |
 | **Rule** | `rule` | `validation` | Schema and input validation. |
+| **Link** | `link` | `provider` | External library/SDK wrappers. |
 | **Shape** | `shape` | `model` / `entity` | Domain entities and data structures. |
 
 Regardless of the names you choose, the **Rules stay the same**. You can select your preferred naming style during project initialization.

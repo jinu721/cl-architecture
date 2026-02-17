@@ -25,6 +25,7 @@ The goal is to show **flow and structure**, not full apps.
 | `source/` | `repository/` | Data access, external APIs |
 | `shape/` | `model/` | Entities, types |
 | `bridge/` | `dto/` | Input/Output DTOs & Mappers |
+| `link/` | `provider/` | External SDKs (JWT, Stripe) |
 | `rule/` | `validation/` | Schema validation (Zod/Joi) |
 
 ---
@@ -124,6 +125,7 @@ export const toUserResponse = (user) => ({
 | `flow/` | `service/` | Core logic |
 | `source/` | `repository/` | DB operations |
 | `bridge/` | `dto/` | Data transfer |
+| `link/` | `provider/` | External utilities |
 | `rule/` | `validation/` | Inputs check |
 | `shape/` | `entity/` | Data structs |
 

@@ -291,5 +291,11 @@ CL-Architecture requires a disciplined, atomic commit strategy to maintain codeb
   - `chore`: Infrastructure, CI, or dependency updates
 * **Stand-alone commits**: Every commit should be able to stand alone and be easily reverted without breaking other features.
 
+### Automated Enforcement (Git Hooks):
+CL-Architecture enforces discipline via automated Git Hooks set up during initialization:
+*   **Pre-commit**: Runs `cl lint` to verify Core-Line architecture rules and layer isolation before any code is committed.
+*   **Commit-msg**: Validates the commit message against Conventional Commit standards.
+*   **Pre-push (Optional)**: Ensures that branch naming follows the `feature/`, `bugfix/`, or `hotfix/` prefix convention.
+
 Strict separation between feature additions, bug fixes, and documentation ensures the project history remains highly readable and professionally maintained.
 

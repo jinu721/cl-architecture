@@ -275,3 +275,21 @@ If rules are followed, you get:
 * Consistent APIs
 * Team-wide discipline
 
+---
+
+## 13. Commit Discipline (Atomic Commits)
+
+CL-Architecture requires a disciplined, atomic commit strategy to maintain codebase history and clarity.
+
+### Rules:
+* **Atomic Nature**: Each commit must be laser-focused on a single responsibility.
+* **Conventional Formats**: Use the `type(scope): message` pattern.
+  - `feat`: New features (e.g., `feat(security): add path sanitization`)
+  - `fix`: Bug fixes (e.g., `fix(auth): update token expiration logic`)
+  - `docs`: Documentation updates
+  - `test`: Adding or updating tests
+  - `chore`: Infrastructure, CI, or dependency updates
+* **Stand-alone commits**: Every commit should be able to stand alone and be easily reverted without breaking other features.
+
+Strict separation between feature additions, bug fixes, and documentation ensures the project history remains highly readable and professionally maintained.
+

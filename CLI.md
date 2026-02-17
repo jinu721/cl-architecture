@@ -68,6 +68,20 @@ Skip all prompts and use defaults.
 
 ---
 
+### Initialize with Naming Style
+
+Choose the naming convention that fits your team's background:
+
+```bash
+npx cl-architecture init --naming=custom
+# Layers: port, flow, source, shape, pulse
+
+npx cl-architecture init --naming=standard
+# Layers: controller, service, repository, model, logger
+```
+
+---
+
 ## Create a Module
 
 ```bash

@@ -49,6 +49,7 @@ This command:
 * Sets up base folder structure
 * Initializes config files
 * Prepares DI and gateway setup
+* **Installs Automated Git Hooks** (Linter & Commit-msg validation)
 
 ---
 

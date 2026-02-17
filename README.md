@@ -37,9 +37,7 @@ CL-Architecture solves these problems by enforcing structure, discipline, and au
 Every request follows one clear, linear path:
 
 ```
-
-Route → Controller (Port) → Flow → Source → Flow → Response
-
+Route → Port (Controller) → Flow (Service) → Source (Repository) → Flow → Response
 ````
 
 No shortcuts.  

@@ -91,16 +91,28 @@ npx cl-architecture create module user
 
 This creates a **self-contained module** with CL structure.
 
-Generated structure:
+Generated structure depends on your selected **Naming Style**:
 
+#### Option 1: Core-Line Custom
 ```
 modules/user/
- ┣━━ port/
- ┣━━ flow/
- ┣━━ source/
- ┣━━ shape/
- ┣━━ bridge/
- ┗━━ rule/
+ ┣━━ port/    (I/O & Controllers)
+ ┣━━ flow/    (Business Logic)
+ ┣━━ source/  (Data Access)
+ ┣━━ shape/   (Models/Entities)
+ ┣━━ bridge/  (DTOs & Mappers)
+ ┗━━ rule/    (Validation)
+```
+
+#### Option 2: Industry Standard
+```
+modules/user/
+ ┣━━ controller/ (I/O & Controllers)
+ ┣━━ service/    (Business Logic)
+ ┣━━ repository/ (Data Access)
+ ┣━━ model/      (Models/Entities)
+ ┣━━ dto/        (DTOs & Mappers)
+ ┗━━ validation/ (Validation)
 ```
 
 ---

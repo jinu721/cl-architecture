@@ -16,29 +16,16 @@ The goal is to show **flow and structure**, not full apps.
 
 ---
 
-### Folder Structure
+#### Folder Structure (Custom vs. Standard)
 
-```
-
-modules/user/
-┣━━ port/
-│   ┣━━ user.controller.ts
-│   ┗━━ user.routes.ts
-┣━━ flow/
-│   ┗━━ create-user.flow.ts
-┣━━ source/
-│   ┣━━ user.source.ts
-│   ┗━━ user.repository.ts
-┣━━ bridge/
-│   ┣━━ create-user.input.ts
-│   ┣━━ user.response.ts
-│   ┗━━ user.mapper.ts
-┣━━ rule/
-│   ┗━━ create-user.rule.ts
-┗━━ shape/
-┗━━ user.entity.ts
-
-````
+| **Custom Style** | **Standard Style** | Description |
+| :--- | :--- | :--- |
+| `port/` | `controller/` | Entry point, routes, handlers |
+| `flow/` | `service/` | Business rules, use cases |
+| `source/` | `repository/` | Data access, external APIs |
+| `shape/` | `model/` | Entities, types |
+| `bridge/` | `dto/` | Input/Output DTOs & Mappers |
+| `rule/` | `validation/` | Schema validation (Zod/Joi) |
 
 ---
 
@@ -129,23 +116,16 @@ export const toUserResponse = (user) => ({
 
 ---
 
-### Folder Structure
+#### Folder Structure (Custom vs. Standard)
 
-```
-user/
- ┣━━ port/
- │   ┗━━ handler.go
- ┣━━ flow/
- │   ┗━━ create_user.go
- ┣━━ source/
- │   ┗━━ repository.go
- ┣━━ bridge/
- │   ┗━━ dto.go
- ┣━━ rule/
- │   ┗━━ validation.go
- ┗━━ shape/
-     ┗━━ entity.go
-```
+| **Custom Style** | **Standard Style** | Description |
+| :--- | :--- | :--- |
+| `port/` | `handler/` | Route handlers |
+| `flow/` | `service/` | Core logic |
+| `source/` | `repository/` | DB operations |
+| `bridge/` | `dto/` | Data transfer |
+| `rule/` | `validation/` | Inputs check |
+| `shape/` | `entity/` | Data structs |
 
 ---
 
